@@ -1,0 +1,102 @@
+/* Reset dasar untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background dan font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff6f61, #f5a623);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Header */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Input dan Select */
+input, select {
+    padding: 15px;
+    font-size: 1.1em;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #ff6f61;
+    outline: none;
+    width: 250px;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Efek ketika input atau select di-hover */
+input:focus, select:focus {
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Tombol */
+button {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efek tombol ketika di-hover */
+button:hover {
+    background-color: #f5a623;
+}
+
+/* Hasil */
+#hasil {
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #fffbf2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hasil ketika hover */
+#hasil:hover {
+    transform: scale(1.05);
+}
+
+/* Animasi loading */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+button:active {
+    animation: pulse 1s ease-in-out infinite;
+}
+

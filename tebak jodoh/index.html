@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Jodoh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input, select {
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #hasil {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Datang di Tebak Jodoh</h1>
+    <p>Masukkan tanggal, bulan, dan jenis kelamin Anda untuk menebak jodoh!</p>
+    
+    <label for="tanggal">Tanggal Lahir:</label>
+    <input type="number" id="tanggal" min="1" max="31">
+    
+    <label for="bulan">Bulan Lahir:</label>
+    <input type="number" id="bulan" min="1" max="12">
+    
+    <label for="jenisKelamin">Jenis Kelamin:</label>
+    <select id="jenisKelamin">
+        <option value="pria">Pria</option>
+        <option value="wanita">Wanita</option>
+    </select>
+    
+    <br>
+    
+    <button onclick="tebakJodoh()">Tebak Jodoh</button>
+    
+    <p id="hasil"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
